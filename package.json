@@ -35,5 +35,11 @@
   "bugs": {
     "url": "https://github.com/lorenzoantei/myBlog/issues"
   },
-  "homepage": "https://github.com/lorenzoantei/myBlog#readme"
+  "homepage": "https://github.com/lorenzoantei/myBlog#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "gatsby-plugin-postcss": "^5.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.12"
+  }
 }
