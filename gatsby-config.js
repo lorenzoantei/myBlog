@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Lorenzo Antei",
+    title: "My First Gatsby Site",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -15,6 +15,6 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-postcss",
+    `gatsby-plugin-postcss`,
   ],
 };
