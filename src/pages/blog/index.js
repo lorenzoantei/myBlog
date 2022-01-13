@@ -4,12 +4,14 @@ import Layout from '../../components/layout'
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout pageTitle="Latest works">
+      <div className="flex justify-center pt-8">
+        <div className='flex flex-col text-center space-y-8'>
       {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
-            <h2 className="text-green-500 text-2xl hover:text-red-500">
-              <Link to={`/blog/${node.slug}`}>
+            <h2 className="">
+              <Link className="text-green-900 text-2xl hover:text-green-400 hover:ease-in-out duration-1000" to={`/blog/${node.slug}`}>
                 {node.frontmatter.title}
               </Link>
             </h2>
@@ -17,6 +19,8 @@ const BlogPage = ({ data }) => {
           </article>
         ))
       }
+      </div>
+      </div>
     </Layout>
   )
 }
@@ -26,7 +30,7 @@ export const query = graphql`
     allMdx(sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
         frontmatter {
-          date(formatString: "MMMM D, YYYY")
+          date(formatString: "YYYY-MM-DD")
           title
         }
         id

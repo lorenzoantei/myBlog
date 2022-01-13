@@ -1,11 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
-  container,
   heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
   siteTitle,
 } from './layout.module.css' //da sostituire con tailwind
 
@@ -24,32 +20,31 @@ const Layout = ({ pageTitle, children }) => {
   `)
 
   return (
-    <div className={container}>
+    <div className="pt-4">
+
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+
+      <header id="{siteTitle}" className="font-poppins text-2xl flex justify-center ">
+        <Link to="/" className="hover:text-purple-700 hover:ease-in-out duration-1000">{data.site.siteMetadata.title}</Link>
+      </header>
       
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
+      <nav className="flex justify-center">
+        <ul className="flex flex-row space-x-4">
+          <li className="">
+            <Link to="/about" className="hover:text-orange-700 hover:ease-in-out duration-1000">
               About
             </Link>
           </li>
-          <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
+          <li className="hover:text-green-700 hover:ease-in-out duration-1000">
+            <Link to="/blog" className="">
               Blog
             </Link>
           </li>
         </ul>
       </nav>
 
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
+      <main className='pt-8'>
+        <h1 className="text-2xl text-red-700 flex justify-center">{pageTitle}</h1>
         {children}
       </main>
     </div>
