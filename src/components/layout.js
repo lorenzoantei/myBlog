@@ -7,7 +7,10 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
-} from './layout.module.css'
+} from './layout.module.css' //da sostituire con tailwind
+
+import "@fontsource/poppins"
+import "@fontsource/lato"
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -24,6 +27,7 @@ const Layout = ({ pageTitle, children }) => {
     <div className={container}>
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -43,6 +47,7 @@ const Layout = ({ pageTitle, children }) => {
           </li>
         </ul>
       </nav>
+
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
