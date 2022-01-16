@@ -9,20 +9,16 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
+      <p className='flex justify-center text-gray-700 text-sm py-4'>{data.mdx.frontmatter.date}</p>
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
       />
-      <p>
-        Photo Credit:{" "}
-        <a href={data.mdx.frontmatter.hero_image_credit_link}>
-          {data.mdx.frontmatter.hero_image_credit_text}
-        </a>
-      </p>
+      
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
+
     </Layout>
   )
 }
