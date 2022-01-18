@@ -7,7 +7,7 @@ const BlogPage = ({ data }) => {
     <Layout pageTitle="latest works">
       {
         data.allMdx.nodes.map(node => (
-          <div className='px-48'>
+          <div className=''>
           
           <article key={node.id} className='py-6'>
 
@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
             </Link>
           </h2>
 
-          <p className='font-lato text-gray-400'>Posted: {node.frontmatter.date}</p>
+          <p className='font-lato text-gray-400 text-sm'>Posted: {node.frontmatter.date}</p>
         </article>
 
         </div>

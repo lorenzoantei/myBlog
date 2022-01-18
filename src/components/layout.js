@@ -26,12 +26,13 @@ const Layout = ({ pageTitle, children }) => {
 
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
 
-      <div className='flex flex-row items-center justify-between font-poppins'>
+      <div className='flex flex-col sm:flex-row items-center justify-between font-poppins'>
 
-      <header id="{siteTitle}" className="text-2xl">
-        <Link to="/" className="hover:text-purple-700 hover:ease-in-out duration-1000">{data.site.siteMetadata.title}</Link>
-      </header>
-      <nav className="">
+        <header id="{siteTitle}" className="text-2xl">
+          <Link to="/" className="hover:text-purple-700 hover:ease-in-out duration-1000">{data.site.siteMetadata.title}</Link>
+        </header>
+
+      <nav className="pt-4 md:pt-0">
         <ul className="flex flex-row space-x-4 md:space-x-8 text-sm md:text-base">
 
           <li className="hover:text-blue-700 hover:ease-in-out duration-1000 ">
