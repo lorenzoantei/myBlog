@@ -4,8 +4,11 @@ module.exports = {
     title: "lorenzo antei",
   },
   plugins: [
+
     "gatsby-plugin-image",
+
     "gatsby-plugin-sharp",
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -13,6 +16,7 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,8 +31,19 @@ module.exports = {
         theme_color_in_head: false, // This will avoid adding theme-color meta tag.
       },
     },
+
     "gatsby-plugin-mdx",
+
     "gatsby-transformer-sharp",
+
     `gatsby-plugin-postcss`,
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
+    
   ],
 };
