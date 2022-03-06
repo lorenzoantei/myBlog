@@ -6,8 +6,8 @@ const IndexPage = () => {
     <Layout pageTitle="e404">
       
       <div className="text-red-500 font-poppins">
-        <p>e404</p>
-        <p></p>
+        <p className=''>There is nothing here :(</p>
+        
       </div>
         
     </Layout>
