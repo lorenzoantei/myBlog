@@ -1,2 +1,2 @@
 # AVVIO GATSBY DEVELOP
-npm run develop
+yarn develop
