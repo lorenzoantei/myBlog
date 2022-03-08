@@ -1,29 +1,23 @@
 module.exports = {
+
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.lorenzoantei.gatsbyjs.io",
     title: "lorenzo antei",
+    author: {
+      name: `Lorenzo Antei`,
+      summary: `who lives and works in La Spezia building useful things.`,
+    },
+    description: `my portfolio`,
+    social: {
+      twitter: `lorenzoantei`,
+      linkedin: `lorenzoantei`,
+      github: `lorenzoantei`,
+    },
   },
+
   plugins: [
 
     "gatsby-plugin-image",
-
-    `gatsby-plugin-sharp`,
-      {
-        resolve: `gatsby-transformer-remark`,
-        options: {
-          plugins: [
-            {
-              resolve: `gatsby-remark-images`,
-              options: {
-                // It's important to specify the maxWidth (in pixels) of
-                // the content container as this plugin uses this as the
-                // base for generating different widths of each image.
-                maxWidth: 590,
-              },
-            },
-          ],
-        },
-      },
 
     {
       resolve: "gatsby-source-filesystem",
@@ -32,6 +26,48 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/images`,
+      }
+    },
+    
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+        plugins: [`gatsby-remark-images`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+              linkImagesToOriginal: false,
+              wrapperStyle: 'margin-bottom: 2.0725rem; margin-top: 2.0725rem; '
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
+
+    `gatsby-transformer-sharp`,
+
+    `gatsby-plugin-sharp`,
+
+    `gatsby-plugin-postcss`,
+
+    `gatsby-plugin-react-helmet`,
 
     {
       resolve: `gatsby-plugin-manifest`,
@@ -45,19 +81,6 @@ module.exports = {
         lang: `en`,
         icon: `src/images/logo.png`,
         theme_color_in_head: false, // This will avoid adding theme-color meta tag.
-      },
-    },
-
-    "gatsby-plugin-mdx",
-
-    "gatsby-transformer-sharp",
-
-    `gatsby-plugin-postcss`,
-
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-responsive-iframe`],
       },
     },
     

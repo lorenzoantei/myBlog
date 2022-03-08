@@ -10,6 +10,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p className='flex justify-center text-gray-700 text-sm py-4'>{data.mdx.frontmatter.date}</p>
+      
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}

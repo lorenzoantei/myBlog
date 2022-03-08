@@ -10,10 +10,12 @@ const IndexPage = ({ data }) => {
     <Layout pageTitle="home">
       <div className="text-grey-500 font-poppins">
         <p>I'm a digital media maker.</p>
-        <p>Since 2016 I have been making photostories, recording videos and trying to do stuff with JS. I study at the Academy of Fine Arts in Carrara and work around Italy.</p>
+        <p>Since 2016 I have been making photostories, recording videos and trying to do stuff with JS. Actually I'm studing at Accademia di Belle Arti di Carrara (<a href="https://www.accademiacarrara.it/it/scuole/nuove-tecnologie-dellarte">Nuove tecnologie dell'arte</a>) and I'm based in La Spezia (it).</p>
       </div>
 
       <StaticImage className="my-8" src="../images/sb_omen_v20034.jpg" />
+
+      <h3 className="font-poppins text-2xl text-gray-500">Latest experiences</h3>
 
 
       {
@@ -36,6 +38,7 @@ const IndexPage = ({ data }) => {
         ))
         
       }
+      <Link to={`/bio`}><div className="text-gray-600 text-xl hover:text-black hover:ease-in-out duration-1000 ">bio</div></Link>
     </Layout>
     
   )
