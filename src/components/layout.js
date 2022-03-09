@@ -21,13 +21,9 @@ const Layout = ({ pageTitle, children }) => {
 
       <title>{data.site.siteMetadata.title}/{pageTitle}/</title>
 
-      <div className='flex flex-col sm:flex-row items-center justify-between font-poppins'>
-
-        <header id="{siteTitle}" className="text-2xl">
-          <Link to="/" className="text-gray-600 text-3xl hover:text-black hover:ease-in-out duration-1000">{data.site.siteMetadata.title}</Link>
+      <header id="{siteTitle}" className="">
+          <Link to="/" className="font-poppins text-gray-600 text-3xl hover:text-black hover:ease-in-out duration-1000">{data.site.siteMetadata.title}</Link>
         </header>
-
-      </div>
 
       <main className='pt-8'>
         <div className='py-8'>
