@@ -1,2 +1,5 @@
 My personal blog
-https://lorenzoantei.gatsbyjs.io/
+
+[lorenzoantei.com](lorenzoantei.com/)
+
+[lorenzoantei.gatsbyjs.io](https://lorenzoantei.gatsbyjs.io/)

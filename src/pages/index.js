@@ -13,32 +13,53 @@ const IndexPage = ({ data }) => {
         <p>Since 2016 I have been making photostories, recording videos and trying to do stuff with JS. Actually I'm studing at Accademia di Belle Arti di Carrara (<a href="https://www.accademiacarrara.it/it/scuole/nuove-tecnologie-dellarte">Nuove tecnologie dell'arte</a>) and I'm based in La Spezia (it).</p>
       </div>
 
-      <StaticImage className="my-8" src="../images/sb_omen_v20034.jpg" />
+      <StaticImage className="my-8 animate-fadeout" src="../images/sb_omen_v20034.jpg" />
 
       <h3 className="font-poppins text-2xl text-gray-500">Latest experiences</h3>
 
 
-      {
-        data.allMdx.nodes.map(node => (
+      { data.allMdx.nodes.map(node => (
           <div className=''>
           
           <article key={node.id} className='py-6'>
 
-          <h2 className="text-gray-600 text-xl hover:text-black hover:ease-in-out duration-1000">
+          <h2 className="text-gray-400 text-xl hover:text-black hover:ease-in-out duration-1000">
             <Link to={`/blog/${node.slug}`}>
               {node.frontmatter.title}
             </Link>
           </h2>
 
           <p className='font-lato text-gray-400 text-sm'>{node.frontmatter.date}</p>
+
         </article>
         
 
         </div>
-        ))
+        )) }
         
-      }
-      <Link to={`/bio`}><div className="text-gray-600 text-xl hover:text-black hover:ease-in-out duration-1000 ">bio</div></Link>
+      <div className="border-t-2 stroke-gray-300 my-6">
+        <div className="flex flex-col text-gray-300 text-lg my-6 space-y-3">
+
+         <div className="flex flex-row space-x-6">
+            <Link to={`/bio`}>
+              <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">bio</div>
+            </Link>
+
+            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline"><a href="https://drive.google.com/drive/folders/1OGZLKMblQLfVO_BnKPkgSsfcFBdgzLRo?usp=sharing">CV</a></div>
+
+            <Link to={`/live`}>
+              <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">live report</div>
+            </Link>
+         </div>
+
+          <div className="flex flex-row space-x-6">
+            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline"><a href="mailto:lorenzoantei@pr.me">email</a></div>
+          
+            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline"><a href="t.me/lorenzoantei">telegram</a></div>
+          </div>
+        
+        </div>
+      </div>
     </Layout>
     
   )
