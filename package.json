@@ -1,11 +1,11 @@
 {
-  "name": "my-blog",
+  "name": "lorenzo-antei",
   "version": "1.0.0",
   "private": true,
-  "description": "My First Gatsby Site",
-  "author": "Megan Sullivan",
+  "description": "My gatsby blog",
+  "author": "Lorenzo Antei",
   "keywords": [
-    "gatsby"
+    "lorenzoantei"
   ],
   "scripts": {
     "develop": "gatsby develop",
