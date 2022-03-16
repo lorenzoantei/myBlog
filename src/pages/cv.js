@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
   
           <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">Selezione Milan Machinima Festival '22</h3>
-          <p>Il mio machinima "Clouds" è stato selezionato per lo screening del Milan Machinima Festival. <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://milanmachinimafestival.org/">Link all'intervista</a></p>
+          <p>Il mio machinima "Clouds" è stato selezionato per lo screening del Milan Machinima Festival. <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://milanmachinimafestival.org/">Link al festival</a></p>
           </div>
           
           <div class="py-6">
