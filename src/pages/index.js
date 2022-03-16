@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
           <article key={node.id} className='py-6'>
 
           <h2 className="text-gray-400 text-xl hover:text-black hover:ease-in-out duration-1000">
-            <Link to={`/blog/${node.slug}`}>
+            <Link className="hover:underline" to={`/blog/${node.slug}`}>
               {node.frontmatter.title}
             </Link>
           </h2>
@@ -45,7 +45,9 @@ const IndexPage = ({ data }) => {
               <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">bio</div>
             </Link>
 
-            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline"><a href="https://drive.google.com/drive/folders/1OGZLKMblQLfVO_BnKPkgSsfcFBdgzLRo?usp=sharing">CV</a></div>
+            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">
+              <Link className="hover:underline" to={`/cv`}>CV</Link>
+            </div>
 
             <Link to={`/live`}>
               <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">live report</div>

@@ -11,11 +11,13 @@ const BioPage = ({ data }) => {
       
         <div><StaticImage className="" src="../images/backstage.png" /></div>
       
-        <div><p>b. 1994</p></div>
+        <div>b. 1994</div>
         
-        <div><p>Currently based in La Spezia (it).</p></div>
+        <div> Currently based in La Spezia (it).</div>
         
-        <div><a className="hover:text-black hover:ease-in-out duration-1000 hover:underline" href="https://drive.google.com/drive/folders/1OGZLKMblQLfVO_BnKPkgSsfcFBdgzLRo?usp=sharing">CV</a></div>
+        <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">
+              <Link className="hover:underline" to={`/cv`}>CV</Link>
+        </div>
         
         <div id="social" className="flex flex-col space-y-4 pt-6">
           <a className="hover:text-black hover:ease-in-out duration-1000 hover:underline" href="mailto:lorenzoantei@pr.me">email</a>
@@ -36,7 +38,7 @@ const BioPage = ({ data }) => {
           <div className="pt-3">(Cory Arcangel)</div> 
         </div>
 
-        <div><Link to={`/`}>goTo home</Link></div> 
+        <div className="text-gray-400 hover:underline hover:text-black hover:ease-in-out duration-1000"><Link to={`/`}>goTo home</Link></div> 
       
       </div>
 
