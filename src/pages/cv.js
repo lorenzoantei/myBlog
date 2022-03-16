@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
           </div>
           
           <div class="py-6">
-            <h3 className="font-poppins text-xl text-gray-500 py-3">Giovanni Antonio Cybei e il suo tempo – web design (aprile ‘21)</h3>
+            <h3 className="font-poppins text-xl text-gray-500 py-3">Ispira (dicembre ‘20)</h3>
             <p>Ispira è networking e sperimentazione, è il punto d’incontro di diverse visioni artistiche e ricerche di contenuti. Ho realizzato delle riprese A/V per la produzione di una videoclip e gli scatti fotografici del backstage. </p>
             <a class="hover:underline" href="https://www.youtube.com/watch?v=hqEMg-uHIFo">videoclip Ginkgo | Va bene così Prod. Chxse Bank | Ispira</a>
           </div>
