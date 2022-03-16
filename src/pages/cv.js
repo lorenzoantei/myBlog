@@ -33,12 +33,12 @@ const IndexPage = ({ data }) => {
   
           <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">Tempi Moderni – Roberto Castello (ALDES | SPAM!) (luglio ‘21)</h3>
-              <p>“TEMPI MODERNI - La commedia rivista: II edizione” è una rassegna di teatro, musica e danza presentata in sedici corti del Comune di Capannori ed ideata da Roberto Castello. Per l’evento ho realizzato le riprese A/V e prodotto un documentario visionabile <a class="hover:underline" href="https://www.youtube.com/watch?v=PIXy9szKSQE">QUI</a>.</p>
+              <p>“TEMPI MODERNI - La commedia rivista: II edizione” è una rassegna di teatro, musica e danza presentata in sedici corti del Comune di Capannori ed ideata da Roberto Castello. Per l’evento ho realizzato le riprese A/V e prodotto un documentario visionabile <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://www.youtube.com/watch?v=PIXy9szKSQE">QUI</a>.</p>
           </div>
   
           <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">Raquel Torralba – <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://www.flickr.com/photos/193622395@N05/sets/72157719705710180/with/51632770803/">Fotografia matrimoniale</a> (da maggio ‘21 a settembre '21')</h3>
-            <p>Studio fotografico specializzato nella realizzazione di servizi foto e video per matrimoni in stile reportage. Produzione di materiale fotografico e audiovisivo. Raquel Torralba Fotografia (Via Cairoli 6/8, 16124 Genova) - <a class="hover:underline" href="https://www.raqueltorralba.com/">raqueltorralba.com</a></p>
+            <p>Studio fotografico specializzato nella realizzazione di servizi foto e video per matrimoni in stile reportage. Produzione di materiale fotografico e audiovisivo. Raquel Torralba Fotografia (Via Cairoli 6/8, 16124 Genova) - <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://www.raqueltorralba.com/">raqueltorralba.com</a></p>
           </div>
   
           <div class="py-6">
@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => {
           <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">Ispira (dicembre ‘20)</h3>
             <p>Ispira è networking e sperimentazione, è il punto d’incontro di diverse visioni artistiche e ricerche di contenuti. Ho realizzato delle riprese A/V per la produzione di una videoclip e gli scatti fotografici del backstage. </p>
-            <a class="hover:underline" href="https://www.youtube.com/watch?v=hqEMg-uHIFo">videoclip Ginkgo | Va bene così Prod. Chxse Bank | Ispira</a>
+            <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://www.youtube.com/watch?v=hqEMg-uHIFo">videoclip Ginkgo | Va bene così Prod. Chxse Bank | Ispira</a>
           </div>
           
           <div class="py-6">
@@ -83,14 +83,13 @@ const IndexPage = ({ data }) => {
   
           <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">Nessiah Festival (da novembre ‘18)</h3>
-            <p>Il Festival Nessiah è un festival nato per esplorare e raccontare la cultura ebraica in tutte le sue sfaccettature, mostrando la ricchezza della sua storia millenaria e la varietà delle tradizioni di luoghi diversi. Per il festival ho realizzato i reportage degli eventi, le riprese video e ho realizzato lo spot delle edizioni 2018 e 2019 e altri filmati promozionali. <a class="hover:underline"href="https://www.festivalnessiah.it/">festivalnessiah.it</a>
+            <p>Il Festival Nessiah è un festival nato per esplorare e raccontare la cultura ebraica in tutte le sue sfaccettature, mostrando la ricchezza della sua storia millenaria e la varietà delle tradizioni di luoghi diversi. Per il festival ho realizzato i reportage degli eventi, le riprese video e ho realizzato lo spot delle edizioni 2018 e 2019 e altri filmati promozionali. <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://www.festivalnessiah.it/">festivalnessiah.it</a>
             </p>
           </div>
   
           <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">Più o meno Pop (da marzo ‘18)</h3>
-            <p>Più o Meno POP è una Webzine che si occupa di eventi musicali. Per Più o Meno POP realizzo photostories di concerti e spettacoli, aiuto nella cura della pagina facebook della redazione e revisione degli articoli. 
-            <a class="hover:underline"href="http://www.piuomenopop.it/?s=lorenzo+antei">QUI</a> i miei reportage.</p>
+            <p>Più o Meno POP è una Webzine che si occupa di eventi musicali. Per Più o Meno POP realizzo photostories di concerti e spettacoli, aiuto nella cura della pagina facebook della redazione e revisione degli articoli. <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="http://www.piuomenopop.it/?s=lorenzo+antei">QUI</a> i miei reportage.</p>
           </div>
   
           <div class="py-6">
@@ -116,7 +115,7 @@ const IndexPage = ({ data }) => {
   
           <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">Economia e commercio (da settembre '14 a giugno '18</h3>
-          <p>Ho superato 19 esami. Università degli studi di Pisa</p>
+          <p>Ho superato 19 esami. Università degli studi di Pisa (Lungarno Antonio Pacinotti, 43 - 56126 Pisa) - <a class="text-gray-400 hover:text-black hover:ease-in-out duration-1000" href="https://www.unipi.it">unipi.it</a>.</p>                                                                           
           </div>
   
         </div>
