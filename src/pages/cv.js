@@ -17,6 +17,11 @@ const IndexPage = ({ data }) => {
           <h3 className="font-poppins text-2xl text-gray-500">ultime esperienze</h3>
   
           <div class="py-6">
+            <h3 className="font-poppins text-xl text-gray-500 py-3">Selezione Milan Machinima Festival '22</h3>
+          <p>Il mio machinima "Clouds" è stato selezionato per lo screening del Milan Machinima Festival. <a class="hover:underline" href="https://milanmachinimafestival.org/">Link all'intervista</a></p>
+          </div>
+          
+          <div class="py-6">
             <h3 className="font-poppins text-xl text-gray-500 py-3">matrimonio.com – scansione 3D location (da luglio ‘21 a ottobre ‘21)</h3>
             <p>Ho realizzato una serie di tour virtuali (scansioni 3D e foto sferiche a 360º) delle location matrimoniali con Matterport Pro2 per matrimonio.com </p>
           </div>
