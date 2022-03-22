@@ -30,12 +30,7 @@ const Layout = ({ pageTitle, children }) => {
           {children}
         </div>
       </main>
-
       
-      <div className="pt-12 pb-24"><Link to={`/`}>goTo home</Link></div> 
-
-
-
     </div>
   )
 }

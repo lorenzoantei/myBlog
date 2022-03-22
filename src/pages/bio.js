@@ -38,7 +38,6 @@ const BioPage = ({ data }) => {
           <div className="pt-3">(Cory Arcangel)</div> 
         </div>
 
-        <div className="text-gray-400 hover:underline hover:text-black hover:ease-in-out duration-1000"><Link to={`/`}>goTo home</Link></div> 
       
       </div>
 

@@ -1,9 +1,7 @@
 import * as React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layout-home'
 import { Link, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-
-
 
 const IndexPage = ({ data }) => {
   return (
@@ -23,11 +21,11 @@ const IndexPage = ({ data }) => {
           
           <article key={node.id} className='py-6'>
 
-          <h2 className="text-gray-400 text-xl hover:text-black hover:ease-in-out duration-1000">
+          <h3>
             <Link className="hover:underline" to={`/blog/${node.slug}`}>
               {node.frontmatter.title}
             </Link>
-          </h2>
+          </h3>
 
           <p className='font-lato text-gray-400 text-sm'>{node.frontmatter.date}</p>
 
@@ -42,22 +40,22 @@ const IndexPage = ({ data }) => {
 
          <div className="flex flex-row space-x-6">
             <Link to={`/bio`}>
-              <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">bio</div>
+              <div>bio</div>
             </Link>
 
-            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">
+            <div>
               <Link className="hover:underline" to={`/cv`}>CV</Link>
             </div>
 
             <Link to={`/live`}>
-              <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline">live report</div>
+              <div>live report</div>
             </Link>
          </div>
 
           <div className="flex flex-row space-x-6">
-            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline"><a href="mailto:lorenzoantei@pr.me">email</a></div>
+            <div><a href="mailto:lorenzoantei@pr.me">email</a></div>
           
-            <div className="hover:text-black hover:ease-in-out duration-1000 hover:underline"><a href="t.me/lorenzoantei">telegram</a></div>
+            <div><a href="t.me/lorenzoantei">telegram</a></div>
           </div>
         
         </div>

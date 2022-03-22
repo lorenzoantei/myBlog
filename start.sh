@@ -1,2 +1,0 @@
-# AVVIO GATSBY DEVELOP
-yarn develop

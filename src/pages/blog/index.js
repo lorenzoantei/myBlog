@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => {
           
           <article key={node.id} className='py-6'>
 
-          <h2 className="text-gray-600 text-xl hover:text-blue-400 hover:ease-in-out duration-1000">
+          <h2 className="text-gray-600 text-xl hover:ease-in-out duration-1000">
             <Link to={`/blog/${node.slug}`}>
               {node.frontmatter.title}
             </Link>

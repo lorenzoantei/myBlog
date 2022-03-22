@@ -5,7 +5,7 @@ module.exports = {
     title: "lorenzo antei",
     author: {
       name: `Lorenzo Antei`,
-      summary: `who lives and works in La Spezia building useful things.`,
+      summary: `I could write something`,
     },
     description: `my portfolio`,
     social: {
